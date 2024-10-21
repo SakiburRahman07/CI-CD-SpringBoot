@@ -7,10 +7,10 @@ WORKDIR /app
 # Add a volume to store logs and other output
 VOLUME /tmp
 
-
+# Copy the Spring Boot jar file to the container
 COPY target/cicdspringboot.jar /app/cicdspringboot.jar
 
-# Expose the application port (optional, depending on your app's config)
+# Expose the application port
 EXPOSE 8080
 
 # Set the environment variables for PostgreSQL connection
