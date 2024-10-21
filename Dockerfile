@@ -7,7 +7,7 @@ WORKDIR /app
 # Add a volume to store logs and other output
 VOLUME /tmp
 
-# Copy the Spring Boot application's JAR file into the container
+
 COPY target/cicdspringboot.jar /app/cicdspringboot.jar
 
 # Expose the application port (optional, depending on your app's config)
